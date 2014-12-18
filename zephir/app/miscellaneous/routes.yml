@@ -16,18 +16,28 @@ routes:
         method: 'GET'
         controller: Offer
         action: Index
-        
+
     # AccountController
     - '/account/register':
         method: 'GET'
         controller: Account
         action: Register
-    
+
     - '/account/create':
         method: 'POST'
         controller: Account
         action: Create
-        
+
+    - '/account/login':
+        method: 'GET'
+        controller: Account
+        action: Login
+
+    - '/account/login':
+        method: 'POST'
+        controller: Account
+        action: Connect
+
     # SecurityController
     - '/security/captcha':
         method: 'GET'

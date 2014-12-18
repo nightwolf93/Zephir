@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 1000;
   color: white;
-  cursor: pointer;
+  display: none;
 
   .black{
     background-color: black;
@@ -20,8 +20,8 @@
   }
 
 
-
-  .message-box {
+  .dialog-box {
+    color: black;
     position: relative;
     width: 500px;
     z-index: 1001;
@@ -33,6 +33,33 @@
     -webkit-box-shadow: 10px 10px 38px 6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 38px 6px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 38px 6px rgba(0,0,0,0.75);
+    border-radius: 5px;
+
+    .close-bt {
+      color: white;
+      background-color: black;
+      border-radius: 50px;
+      padding: 5px;
+      width: 17px;
+      text-align: center;
+      cursor: pointer;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      transition: 0.4s;
+
+      &::before {
+        content: 'X';
+      }
+
+      &:hover {
+        transform: rotate(180deg);
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
 
     .container {
       padding: 10px;

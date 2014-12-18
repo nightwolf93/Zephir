@@ -1,5 +1,6 @@
 class IndexPage
   index: ->
-    console.log 'index'
+    #dialog = new DialogBox "buy", "ConfirmBuy"
+    #dialog.load =>
 
 window.IndexPage = IndexPage

@@ -2,7 +2,7 @@ body {
   font-family: Helvetica;
   color: black;
   background-color: white;
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
   padding: 0;
 }
@@ -30,6 +30,10 @@ html {
         padding-left: 20px;
         white-space: nowrap;
 
+        a {
+          text-decoration: none;
+        }
+
         .item {
             display: inline-block;
             height: @nav-height;
@@ -38,7 +42,7 @@ html {
             color: gray;
             transition: 0.3s;
             padding-right: 10px;
-            padding-left: 10px;
+            padding-left: 10px;    
 
             &:hover {
                 color: white;

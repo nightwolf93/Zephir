@@ -74,11 +74,6 @@
     <body>
         <div id="overlay-black">
           <div class="black"></div>
-          <div class="message-box">
-            <div class="container">
-              <h3>Confirmation d\'achat</h3>
-            </div>
-          </div>
         </div>
 
         <div id="navbar">
@@ -90,6 +85,7 @@
                 </a>
                 <div class="separator"></div>
                 <a href="'.$cx['funcs']['ch']($cx, 'route', array(array(),array('to'=>'')), 'raw').'"><div class="item">Accueil</div></a>
+                <a href="'.$cx['funcs']['ch']($cx, 'route', array(array(),array('to'=>'account/login')), 'raw').'"><div class="item">Connexion</div></a>
                 <div class="item">API</div>
                 <div class="item">A propos de</div>
             </div>

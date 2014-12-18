@@ -1,8 +1,12 @@
 class Gateway
   constructor: ->
-    @baseUrl = '/Zomie-Ogame'
+    @baseUrl = "/" + document.location.pathname.split('/')[1]
 
   request: (target, params, callback) ->
+    $.post(@baseUrl + target, params).done (data) =>
+      callback data
+
+  requestJSON: (target, params, callback) ->
     $.post(@baseUrl + target, params).done (data) =>
       callback JSON.parse(data)
 

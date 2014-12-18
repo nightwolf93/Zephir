@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
         files: {
-          'Zephir/public/js/app.js': ['Zephir/public/coffee/*.coffee', 'Zephir/public/coffee/pages/*.coffee']
+          'Zephir/public/js/app.js': ['Zephir/public/coffee/*.coffee', 'Zephir/public/coffee/pages/*.coffee', 'Zephir/public/coffee/core/*.coffee']
         }
       }
     },

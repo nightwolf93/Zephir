@@ -1,0 +1,35 @@
+# There is the file where you make somes routes
+
+routes:
+    # HomeController
+    - '/':
+        method: 'GET'
+        controller: Home
+        action: Index
+    - '/home':
+        method: 'GET'
+        controller: Home
+        action: Index
+
+    # OfferController
+    - '/offer/[i:id]':
+        method: 'GET'
+        controller: Offer
+        action: Index
+        
+    # AccountController
+    - '/account/register':
+        method: 'GET'
+        controller: Account
+        action: Register
+    
+    - '/account/create':
+        method: 'POST'
+        controller: Account
+        action: Create
+        
+    # SecurityController
+    - '/security/captcha':
+        method: 'GET'
+        controller: Security
+        action: Captcha

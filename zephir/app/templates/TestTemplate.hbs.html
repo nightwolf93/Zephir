@@ -1,0 +1,13 @@
+<script id="article-tpl" type="text/x-handlebars-template">
+
+    <br />
+    {{#each articles}}
+        <br />
+        <div class="entry">
+            <a href="article/{{id}}"><div class="title">{{title}}</div></a>
+            <div class="content">{{content}}</div>
+        </div>
+        <br />
+    {{/each}}
+
+</script>

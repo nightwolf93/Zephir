@@ -1,0 +1,18 @@
+common:
+    absolute_path: 'http://127.0.0.1/exlauncher'
+    base_path: '/exlauncher'
+    devmode: true
+
+databases:
+    use: 'local'
+    definitions:
+        - local:
+            type: mysql
+            host: 127.0.0.1
+            username: root
+            password: root
+            db: exlauncher
+
+facebook:
+    appid: 00000000
+    appname: 'Zombie-App'
